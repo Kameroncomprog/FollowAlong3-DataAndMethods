@@ -9,5 +9,64 @@ package part10;
 // There is no main method here yet. Typing it is part of the stretch.
 
 public class Stretch {
+    public static void main(String[] args) {
+        int[] nums = {4, 8, 15, 16};
+        // system outputs 8
+        System.out.println(nums[1]);
+        System.out.println(nums.length);
+        nums[0] = nums[3] + 1;
+        // system outputs 4
+        System.out.println(nums[0]);
+        for (int i = nums.length - 1; i >= 0; i--) {
+            // system outputs 17
+            System.out.print(nums[i] + " ");
+        }
+        // system outputs 16 15 8 & 17
+        System.out.println();
+        int[][] grid = {{1, 2, 3}, {4, 5, 6}};
+        // system outputs 4
+        System.out.println(grid[1][0]);
+        // system outputs 2 rows and 3 columns
+        System.out.println(grid.length + " rows, " + grid[0].length + " columns");
 
+        //B1.
+        String[] foods = {"pizza", "tacos", "wings"};
+        for (int i = 0; i < foods.length; i++) {
+            System.out.println("I like " + foods[i]);
+        }
+
+        //B2.
+        int[] scores = {88, 92, 75, 100, 64};
+        int sum = 0;
+
+        for (int i = 0; i < scores.length; i++) {
+            sum += scores[i];
+        }
+
+        double average = (double) sum / scores.length;
+
+        System.out.println("Total: " + sum);
+        System.out.println("Average: " + average);
+
+        //B3.
+        String[][] seats = {
+                {"Ana", "Ben", "Cal"},
+                {"Dee", "Eli", "Fay"}
+        };
+
+        for (int row = 0; row < seats.length; row++) {
+            System.out.print("Row " + (row + 1) + ":\t");
+
+            for (int col = 0; col < seats[row].length; col++) {
+                System.out.print(seats[row][col] + "\t");
+            }
+
+            System.out.println();
+        }
+
+
+
+
+
+    }
 }
