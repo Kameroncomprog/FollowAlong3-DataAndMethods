@@ -15,5 +15,26 @@ package part11;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class WrapperClasses {
+    // start of program
+    public static void main(String[] args) {
+        Boolean a = true; // Creates a Boolean variable and stores true
+        Character b = '@'; // Creates a Character variable and stores '@'
+        Integer c = 123;  // Creates an Integer variable and stores 123
+        Double d = 3.14;  // Creates a Double variable and stores 3.14
+        String e = "Bro";  // Creates a String variable and stores "Bro"
+        if (a == true) { // Checks if a is equal to true
+            System.out.println("This is true");  // Prints "This is true"
+        } // Ends the first if statement
 
+        if (b == '@') { // Checks if b is equal to '@'
+            System.out.println("This is true"); // Prints "This is true"
+        } // Ends the second if statement
+        System.out.println(c + 1); // Adds 1 to 123 and prints 124
+        System.out.println(d * 2); // Multiplies 3.14 by 2 and prints 6.28
+
+
+
+
+
+    }
 }
